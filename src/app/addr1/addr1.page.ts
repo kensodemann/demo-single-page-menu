@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-addr1',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./addr1.page.scss']
 })
 export class Addr1Page implements OnInit {
-  constructor(public router: Router) {}
+  constructor(public navController: NavController, public router: Router) {}
 
   ngOnInit() {}
 }

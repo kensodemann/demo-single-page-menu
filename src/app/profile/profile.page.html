@@ -8,6 +8,6 @@
 </ion-header>
 
 <ion-content>
-  <!-- <ion-button [routerLink]="['/addr1']">Next</ion-button>   -->
   <ion-button (click)="router.navigate(['addr1'])">Next</ion-button>  
+  <ion-button (click)="navController.pop()">Pop</ion-button>
 </ion-content>

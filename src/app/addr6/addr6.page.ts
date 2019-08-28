@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.page.html',
-  styleUrls: ['./profile.page.scss']
+  selector: 'app-addr6',
+  templateUrl: './addr6.page.html',
+  styleUrls: ['./addr6.page.scss']
 })
-export class ProfilePage implements OnInit {
+export class Addr6Page implements OnInit {
   constructor(public navController: NavController, public router: Router) {}
 
   ngOnInit() {}

@@ -1,10 +1,14 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>addr2</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- <ion-button [routerLink]="['/addr3']">Next</ion-button>   -->
   <ion-button (click)="router.navigate(['addr3'])">Next</ion-button>
+  <ion-button (click)="navController.pop()">Pop</ion-button>
+  <ion-button (click)="router.navigate(['profile'])">Back 2</ion-button>
 </ion-content>
