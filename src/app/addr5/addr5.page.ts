@@ -11,4 +11,12 @@ export class Addr5Page implements OnInit {
   constructor(public navController: NavController, public router: Router) {}
 
   ngOnInit() {}
+
+  ionViewWillEnter() {
+    console.log('addr5 will enter');
+  }
+
+  ionViewDidEnter() {
+    console.log('addr5 did enter');
+  }
 }

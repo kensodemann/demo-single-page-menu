@@ -11,4 +11,12 @@ export class Addr1Page implements OnInit {
   constructor(public navController: NavController, public router: Router) {}
 
   ngOnInit() {}
+
+  ionViewWillEnter() {
+    console.log('addr1 will enter');
+  }
+
+  ionViewDidEnter() {
+    console.log('addr1 did enter');
+  }
 }

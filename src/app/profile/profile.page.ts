@@ -11,4 +11,12 @@ export class ProfilePage implements OnInit {
   constructor(public navController: NavController, public router: Router) {}
 
   ngOnInit() {}
+
+  ionViewWillEnter() {
+    console.log('profile will enter');
+  }
+
+  ionViewDidEnter() {
+    console.log('profile did enter');
+  }
 }

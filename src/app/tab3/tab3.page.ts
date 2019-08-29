@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
   constructor() {}
 
+  ionViewWillEnter() {
+    console.log('tab3 will enter');
+  }
+
+  ionViewDidEnter() {
+    console.log('tab3 did enter');
+  }
 }

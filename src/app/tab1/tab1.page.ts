@@ -9,4 +9,11 @@ export class Tab1Page {
 
   constructor() {}
 
+  ionViewWillEnter() {
+    console.log('tab1 will enter');
+  }
+
+  ionViewDidEnter() {
+    console.log('tab1 did enter');
+  }
 }
