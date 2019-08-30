@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
+import { NavController, IonRouterOutlet } from '@ionic/angular';
 
 @Component({
   selector: 'app-addr4',
@@ -8,7 +8,9 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./addr4.page.scss']
 })
 export class Addr4Page implements OnInit {
-  constructor(public navController: NavController, public router: Router) {}
+  canPop: string;
+
+  constructor(public navController: NavController, public router: Router, private routerOutlet: IonRouterOutlet) {}
 
   ngOnInit() {}
 
@@ -18,5 +20,6 @@ export class Addr4Page implements OnInit {
 
   ionViewDidEnter() {
     console.log('addr4 did enter');
+    this.canPop = this.routerOutlet.canGoBack() ? 'Yes' : 'No';
   }
 }
